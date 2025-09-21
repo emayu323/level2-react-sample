@@ -61,7 +61,9 @@ export default function App() {
             メッセージ
             <textarea required value={message} onChange={e => setMessage(e.target.value)} placeholder="お問い合わせ内容" rows={4} />
           </label>
-          <button type="submit" disabled={loading}>{loading ? '送信中…' : '送信'}</button>
+          <button type="submit" disabled={!formOk}>
+            {loading ? '送信中…' : '送信する'}
+          </button>
         </form>
         {error && <p className="error">{error}</p>}
         {result && (
