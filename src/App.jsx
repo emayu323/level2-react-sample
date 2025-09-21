@@ -36,7 +36,7 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Level 2: React 一枚ページ</h1>
+       <h1>Level 2: React 一枚ページ（更新テスト）</h1>
         <p>ヘッダー／カード／フォーム、ダミーAPIにPOSTする練習</p>
       </header>
 
